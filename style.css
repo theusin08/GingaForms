@@ -1,0 +1,102 @@
+/* Importação da fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos gerais para o body */
+body {
+    background-color: #F4F4F9; /* Cor de fundo suave */
+    font-size: 12px; /* Tamanho de fonte bem reduzido */
+}
+
+/* Estilos da container */
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #FFCC00; /* Cor de fundo vibrante */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Estilo da imagem */
+img {
+    width: 200px;     /* Imagem ainda menor */
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo do título (h2) */
+h2 {
+    color: #003366; /* Cor escura para o título */
+    font-size: 18px; /* Tamanho do título bem reduzido */
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo para os links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Menor espaço entre os links */
+    width: 100%;
+    max-width: 280px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 12px; /* Fontes menores ainda */
+    font-weight: 500;
+    color: white;
+    background-color: #4CAF50; /* Cor de fundo verde */
+    padding: 8px 12px;
+    border-radius: 8px; /* Bordas arredondadas */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link:hover {
+    background-color: #45a049; /* Cor mais escura no hover */
+    transform: translateY(-3px); /* Leve efeito de elevação */
+}
+
+.link:active {
+    background-color: #388e3c; /* Cor ao clicar */
+}
+
+/* Ajustes para dispositivos móveis (telas menores) */
+@media (max-width: 600px) {
+    body {
+        font-size: 10px; /* Tamanho de fonte bem reduzido em dispositivos móveis */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 14px; /* Título bem menor em telas pequenas */
+    }
+
+    .link {
+        font-size: 10px; /* Links menores em dispositivos móveis */
+        padding: 6px 10px; /* Ajuste no padding para caber melhor */
+    }
+
+    img {
+        width: 150px; /* Imagem ainda menor em telas pequenas */
+    }
+}
